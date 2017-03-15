@@ -12,7 +12,7 @@ public class DeadLock {
         public String getNome() {
             return this.nome;
         }
-        public void passar(Amigo passador) {
+        public synchronized void passar(Amigo passador) {
             System.out.printf("%s: %s  me passou a bola!%n",
                     new Object[]{this.nome, passador.getNome()});
             passador.passaDeVolta(this);

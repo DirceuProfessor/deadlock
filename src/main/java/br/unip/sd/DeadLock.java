@@ -22,7 +22,8 @@ public class DeadLock {
                             + " voltou a bola pra mim!%n",
                     new Object[]{this.nome, passador.getNome()});
         }
-    }
+        
+            }
 
     public static void main(String[] args) {
         final Amigo neymar =
